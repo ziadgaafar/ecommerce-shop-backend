@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3001;
 //Middlewares
 app.use(
   cors({
-    origin: [process.env.WEB_APP_URL, "http://localhost:3000"],
+    origin: process.env.WEB_APP_URL,
   })
 );
 app.use(express.json());
