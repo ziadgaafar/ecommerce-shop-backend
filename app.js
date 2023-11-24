@@ -14,12 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 //Middlewares
-app.use(
-  cors({
-    origin: [process.env.WEB_APP_URL, "http://localhost:3000"],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
